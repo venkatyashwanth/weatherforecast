@@ -52,7 +52,7 @@ export function useSearchHistory() {
             setHistory([])
             return [];
         },
-        onSuccess: (newHistory) => {
+        onSuccess: () => {
             queryClient.setQueryData(["search-history"], [])
         }
     })
